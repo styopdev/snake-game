@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.grid {
+  display: grid;
+  padding: 20px;
+  border: 3px solid lightcoral;
+  width: 500px;
+  margin: 0 auto;
+  padding: 0;
+  grid-template-columns: repeat(10, 50px);
+}
+
+.cell {
+  /* border: 1px solid salmon; */
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.cell.apple {
+  background-image: url("https://media.istockphoto.com/id/1045495508/vector/red-apple-illustration-icon-vector.jpg?s=612x612&w=0&k=20&c=miHEE4W4VlC1D6VNFRe69v7WIvHiiMWMqG68sCjpT3E=");
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.cell.snake {
+  background-color: salmon;
+}
+.cell.snake.snake-head {
+  background-color: blueviolet;
+}
+#score {
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin: 10px auto;
+  color: lightcoral;
+  border: 3px solid lightcoral;
+  width: 50px;
+}
